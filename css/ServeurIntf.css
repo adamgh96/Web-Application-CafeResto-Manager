@@ -1,0 +1,169 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080710;
+    background-image: url(../imgcafe/00.jpg);
+    background-size: cover;
+
+    
+}
+
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    
+}
+
+form{
+
+    height: auto;
+    width: 80%;
+    background-color: rgba(255,255,255,0.13);
+    
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+
+form .portfolio .imgs-container {
+
+    padding-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+
+}
+form .portfolio .imgs-container .box{
+    flex-basis: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+form .portfolio .imgs-container .box:hover .caption {
+    bottom: 0;   
+}
+form .portfolio .imgs-container .box:hover img {
+    transform: rotate(5deg) scale(1.2);
+   
+}
+@media (min-width: 768px) {
+    form .portfolio .imgs-container .box{
+        flex-basis: 50%;
+    }
+}
+@media (min-width: 1199px) {
+    form .portfolio .imgs-container .box{
+        flex-basis: 25%;
+    }
+}
+form .portfolio .imgs-container .box img{
+    max-width: 100%;
+    transition: 0.4s;
+    width: 264px;
+    height: 200px;
+}
+form .portfolio .imgs-container .box .caption{
+    position: absolute;
+    background-color: white;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    transition: 0.4s;
+    bottom: -100%;
+}
+form .portfolio .imgs-container .box .caption h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+form .portfolio .imgs-container .box .caption p {
+    color: var(--main-color);
+}
+
+
+
+.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    text-align: center;
+    margin-top: 13px;
+    position: relative;
+}
+  
+/*apply css properties to button tag*/
+  
+
+input {
+    width: 70px;
+    height: 35px;
+    font-size: 30px;
+    background-color: green;
+    color: honeydew;
+    margin: 5px 4px 0px 3px;
+    border: none;
+}
+  
+/*apply hover effect to button tag*/
+  
+
+input:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+input[type="text"]{
+    background-color: #E0E0E0;
+    text-align: center;
+    border: none;
+    color: black;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    width: 20px;
+    margin-bottom: 5px;
+    right: 0;
+    top: 0%;
+}
+
+input[type="submit"] {
+    
+    position: absolute;
+    bottom: 20px;
+    right: 13px;
+    width: 100px;
+    height: 40px;
+    font-size: 25px;
+    background-color: #7CFC00;
+    color: honeydew;
+    margin: 5px 4px 0px 3px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+input[type="submit"]:hover {
+    
+    font-weight: bold;
+    border-radius: 30px;
+    height: 46px;
+    width: 120px;
+}
